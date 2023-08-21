@@ -1,0 +1,19 @@
+@echo off
+call depends.cmd eliud_core
+call depends.cmd eliud_generator
+call depends.cmd eliud_pkg_apps
+call depends.cmd eliud_pkg_chat
+call depends.cmd eliud_pkg_create
+call depends.cmd eliud_pkg_etc
+call depends.cmd eliud_pkg_feed
+call depends.cmd eliud_pkg_follow
+call depends.cmd eliud_pkg_fundamentals
+call depends.cmd eliud_pkg_medium
+call depends.cmd eliud_pkg_membership
+call depends.cmd eliud_pkg_notifications
+call depends.cmd eliud_pkg_pay
+call depends.cmd eliud_pkg_shop
+call depends.cmd eliud_pkg_text
+call depends.cmd eliud_pkg_wizards
+call depends.cmd eliud_pkg_workflow
+call depends.cmd eliud_stl_mona

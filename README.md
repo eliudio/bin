@@ -68,3 +68,29 @@ cd \eliud
 gen-all.cmd
 ```
 
+## depends.cmd
+generates dependency diagram for a package
+
+### usage: 
+depends.cmd subdirectory, subdirectory is the directory for which to generate this dependency diagram
+
+### result: 
+depends.jpg file in that directory is created/updated
+
+### example
+```
+cd \eliud
+bin\depends.cmd eliud_core
+```
+
+## depends-all.cmd
+runs depends.cmd on all eliud packages
+
+### usage: 
+depends-all.cmd
+
+### example
+```
+cd \eliud
+depends-all.cmd
+```
