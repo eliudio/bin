@@ -9,12 +9,13 @@ is where the eliud repositories have been cloned into. In other words, the direc
 script to push contents to pub.dev
 
 ### usage: 
-pub.dev.cmd subdirectory
-where: subdirectory is the directory to push to pub.dev
+pub.dev.cmd subdirectory, where: subdirectory is the directory to push to pub.dev
 
 ### example
+```
 cd \eliud
 bin\pub.dev.cmd eliud_core
+```
 
 ## check-git.cmd
 
@@ -22,20 +23,48 @@ bin\pub.dev.cmd eliud_core
 script to quickly push changes to github
 
 ### usage
-check-git.cmd subdirectory
+check-git.cmd subdirectory, where: subdirectory is the directory to push to github
 
-where: subdirectory is the directory to push to github
+### example
+```
+cd \eliud
+bin\check-git.cmd eliud_core
+```
 
-### checkall-git
+## checkall-git
 runs check-git on all eliud packages
+
+### usage
+check-all.cmd
+
+### example
+```
+cd \eliud
+check-all.cmd
+```
 
 ## gen.cmd
 ### what?
 generates eliud dart helper classes (model, entity, firestore, cache, ...) for a package
 
 ### usage: 
-gen.cmd subdirectory
-where: subdirectory is the directory for which to generate these classes
+gen.cmd subdirectory, where: subdirectory is the directory for which to generate these classes
+
+### example
+```
+cd \eliud
+gen.cmd eliud_core
+```
 
 ## gen-all.cmd
 runs gen.cmd on all eliud packages
+
+### usage: 
+gen-all.cmd
+
+### example
+```
+cd \eliud
+gen-all.cmd
+```
+
