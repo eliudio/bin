@@ -1,3 +1,4 @@
+@echo off
 call check-git docs
 call check-git eliud_core
 call check-git eliud_generator
