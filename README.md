@@ -9,17 +9,17 @@ Install: to be able to use these, make sure to also clone repository tools and b
 
 |command|What?|Parameters                   |
 |-------|-----|-----------------------------|
-|status.cmd|runs git status on all eliud directories|
-|add.cmd|runs git add . on all eliud directories|
-|push.cmd|runs git push all eliud directories|
-|commit.cmd|runs git commit on all directories.|
+|status.cmd|runs git status on all eliud directories|/|
+|add.cmd|runs git add . on all eliud directories|/|
+|push.cmd|runs git push all eliud directories|/|
+|commit.cmd|runs git commit on all directories.|Commit message|
 
 ## change version commands
 
 |command|What?|Parameters                   |
 |-------|-----|-----------------------------|
-|changeversion.cmd|changes the version of a package (and referencing packages|
-|bumpversions.cmd|bumps the versions of all packages (and referencing packages|
+|changeversion.cmd|changes the version of a package (and referencing packages|package, version|
+|bumpversions.cmd|bumps the versions of all packages (and referencing packages|/|
 
 ## pub.dev commands
 ### pub.dev.cmd
