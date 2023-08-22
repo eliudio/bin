@@ -3,94 +3,105 @@
 Helper scripts for eliud. These scripts must be run from the root eliud directory. The root eliud directory
 is where the eliud repositories have been cloned into. In other words, the directory containing eliud_core, eliud_pkg_*, etc
 
-## pub.dev.cmd
+Install: to be able to use these, make sure to also clone repository tools and build as per README instructions
 
-### what?
+## git commands
+
+|command|What?|Parameters                   |
+|-------|-----|-----------------------------|
+|status.cmd|runs git status on all eliud directories|
+|add.cmd|runs git add . on all eliud directories|
+|push.cmd|runs git push all eliud directories|
+|commit.cmd|runs git commit on all directories.|
+
+## change version commands
+
+|command|What?|Parameters                   |
+|-------|-----|-----------------------------|
+|changeversion.cmd|changes the version of a package (and referencing packages|
+|bumpversions.cmd|bumps the versions of all packages (and referencing packages|
+
+## pub.dev commands
+### pub.dev.cmd
+
+#### what?
 script to push contents to pub.dev
 
-### usage: 
+#### usage: 
 pub.dev.cmd subdirectory, where: subdirectory is the directory to push to pub.dev
 
-### example
+#### example
 ```
 cd \eliud
 bin\pub.dev.cmd eliud_core
 ```
 
-## check-git.cmd
+### pub.dev-all.cmd
+runs pub.dev.cmd on all eliud packages
 
-### what?
-script to quickly push changes to github
+#### usage: 
+pub.dev-all.cmd
 
-### usage
-check-git.cmd subdirectory, where: subdirectory is the directory to push to github
-
-### example
+#### example
 ```
 cd \eliud
-bin\check-git.cmd eliud_core
+pub.dev-all.cmd
 ```
 
-## checkall-git
-runs check-git on all eliud packages
+## code generation tools
 
-### usage
-check-all.cmd
-
-### example
-```
-cd \eliud
-check-all.cmd
-```
-
-## gen.cmd
-### what?
+### gen.cmd
+#### what?
 generates eliud dart helper classes (model, entity, firestore, cache, ...) for a package
 
-### usage: 
+#### usage: 
 gen.cmd subdirectory, where: subdirectory is the directory for which to generate these classes
 
-### example
+#### example
 ```
 cd \eliud
 gen.cmd eliud_core
 ```
 
-## gen-all.cmd
+### gen-all.cmd
 runs gen.cmd on all eliud packages
 
-### usage: 
+#### usage: 
 gen-all.cmd
 
-### example
+#### example
 ```
 cd \eliud
 gen-all.cmd
 ```
 
-## depends.cmd
+## dependency diagrams
+
+### depends.cmd
 generates dependency diagram for a package
 
-### usage: 
+#### usage: 
 depends.cmd subdirectory, subdirectory is the directory for which to generate this dependency diagram
 
-### result: 
+#### result: 
 depends.jpg file in that directory is created/updated
 
-### example
+#### example
 ```
 cd \eliud
 bin\depends.cmd eliud_core
 ```
 
-## depends-all.cmd
+### depends-all.cmd
 runs depends.cmd on all eliud packages
 
-### usage: 
+#### usage: 
 depends-all.cmd
 
-### example
+#### example
 ```
 cd \eliud
 depends-all.cmd
 ```
+
+
