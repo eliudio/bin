@@ -1,11 +1,11 @@
 @echo off
 call pub.dev eliud_core
 call pub.dev eliud_generator
+call pub.dev eliud_pkg_medium
 call pub.dev eliud_pkg_text
 call pub.dev eliud_stl_mona
 call pub.dev eliud_pkg_fundamentals
 call pub.dev eliud_pkg_notifications
-call pub.dev eliud_pkg_medium
 call pub.dev eliud_pkg_etc
 call pub.dev eliud_pkg_workflow
 call pub.dev eliud_pkg_membership
