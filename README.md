@@ -18,8 +18,9 @@ Install: to be able to use these, make sure to also clone repository tools and b
 
 |command|What?|Parameters                   |
 |-------|-----|-----------------------------|
-|changeversion.cmd|changes the version of a package (and referencing packages|package, version|
-|bumpversions.cmd|bumps the versions of all packages (and referencing packages|/|
+|changeversion.cmd|changes the version of a package (and referencing packages)|package, version|
+|bumpversions.cmd|bumps the versions of all packages (and referencing packages)|/|
+|listversions.cmd|list the versions of all packages|/|
 
 ## pub.dev commands
 ### pub.dev.cmd
