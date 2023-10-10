@@ -1,6 +1,7 @@
 @echo off
 if "%1" == "" goto usage
 cd %1
+call markdown-toc -i README.md
 echo y | dart pub publish
 cd ..
 
