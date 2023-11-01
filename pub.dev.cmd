@@ -1,8 +1,17 @@
 @echo off
 if "%1" == "" goto usage
 cd %1
+
+echo Step 1: markdown table of contents
 call markdown-toc -i README.md
-echo y | dart pub publish
+
+rem We've done this fix and also doing it in gen.cmd, so no new issues should occur
+rem echo Step 2: dart fix
+rem call dart fix --dry-run
+rem call dart fix --apply
+
+echo Step 3: dart pub publish
+echo y | call dart pub publish
 cd ..
 
 goto theend
