@@ -6,10 +6,9 @@ cd %1
 if "%2"=="PUB_GET" call flutter pub get
 if "%2"=="PUB_GET" call flutter pub upgrade
 del lib\model\*.dart
-rem call flutter packages pub run build_runner build --delete-conflicting-outputs 
 call dart run build_runner build --delete-conflicting-outputs 
-call dart fix --dry-run
 call dart fix --apply
+call dart format .
 cd ..
 
 goto theend
