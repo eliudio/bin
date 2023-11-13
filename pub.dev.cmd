@@ -5,13 +5,18 @@ cd %1
 echo Step 1: markdown table of contents
 call markdown-toc -i README.md
 
-rem We've done this fix and also doing it in gen.cmd, so no new issues should occur
-rem echo Step 2: dart fix
-rem call dart fix --dry-run
-rem call dart fix --apply
+rem echo Step 2: generate doc
+rem set FLUTTER_ROOT=c:\dev\flutter
+rem rmdir doc\api /q /s
+rem call dartdoc --no-include-source --format md --no-verbose-warnings
 
-echo Step 3: dart pub publish
+rem echo Step 3: pana
+rem call pana %1
+
+echo Step 4: dart pub publish
 echo y | call dart pub publish
+
+echo Step 5: Finish
 cd ..
 
 goto theend

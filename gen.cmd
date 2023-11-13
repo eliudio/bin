@@ -3,6 +3,7 @@ if "%1" == "" goto usage
 echo ********************************** %1 **********************************
 
 cd %1
+call flutter clean
 if "%2"=="PUB_GET" call flutter pub get
 if "%2"=="PUB_GET" call flutter pub upgrade
 del lib\model\*.dart
