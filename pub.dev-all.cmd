@@ -14,6 +14,6 @@ call pub.dev eliud_pkg_create
 call pub.dev eliud_pkg_follow
 call pub.dev eliud_pkg_chat
 call pub.dev eliud_pkg_feed
-call pub.dev eliud_pkg_shop
+call pub.dev eliud_pkg_shop_model
 call pub.dev eliud_pkg_wizards
 call pub.dev eliud_pkg_apps
