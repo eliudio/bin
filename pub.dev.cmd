@@ -1,23 +1,25 @@
 @echo off
 if "%1" == "" goto usage
+
+echo Step 1: depends diagram
+call depends %1
+
+echo Step 2: depends links
+call depends-links %1
+
+echo Step 3: markdown table of contents
 cd %1
-
-echo Step 1: markdown table of contents
 call markdown-toc -i README.md
-
-rem echo Step 2: generate doc
-rem set FLUTTER_ROOT=c:\dev\flutter
-rem rmdir doc\api /q /s
-rem call dartdoc --no-include-source --format md --no-verbose-warnings
-
-rem echo Step 3: pana
-rem call pana %1
 
 echo Step 4: dart pub publish
 echo y | call dart pub publish
 
 echo Step 5: Finish
 cd ..
+
+rem not doing dartdoc / pana
+rem dartdoc --no-include-source --format md --no-verbose-warnings
+rem pana
 
 goto theend
 
