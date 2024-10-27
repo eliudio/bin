@@ -7,6 +7,7 @@ call flutter clean
 if "%2"=="PUB_GET" call flutter pub get
 if "%2"=="PUB_GET" call flutter pub upgrade
 del lib\model\*.dart
+call dart pub upgrade
 call dart run build_runner build --delete-conflicting-outputs 
 call dart fix --apply
 call dart format .
